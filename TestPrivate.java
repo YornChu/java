@@ -7,6 +7,6 @@ public class TestPrivate
 	}
 	public void func(TestPrivate a)
 	{
-		System.out.println(a.x);
+		System.out.println(a.x);;;;
 	}
 }
