@@ -1,6 +1,6 @@
 class Outer
 {
-	int outer_i=100;
+	private int outer_i=100;
 	void test()
 	{
 		Inner in=new Inner();
@@ -8,9 +8,10 @@ class Outer
 	}
 	class Inner
 	{
-		private void display()
+		
+		void display()
 		{
-			System.out.println("display:outer_i");
+			System.out.println("display:outer_i"+outer_i);
 		}
 	}
 }
