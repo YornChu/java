@@ -10,7 +10,7 @@ public class Person
 	public Person()
 	{
 	}
-	public void getInfo()
+	public final void getInfo()
 	{
 		System.out.println(name);
 		System.out.println(age);

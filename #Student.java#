@@ -1,6 +1,6 @@
 class Student extends Person
 {
-	final String school=new String();
+	 String school=new String();
 	public void study()
 	{
 		System.out.println("Learning");
