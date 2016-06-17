@@ -1,6 +1,10 @@
-class Student extends Person
+class Student extends Person implements InterfaceRunner
 {
-	final String school=new String();
+	 String school=new String();
+	public void run()
+	{
+		System.out.println("the student is running");
+	}
 	public void study()
 	{
 		System.out.println("Learning");
@@ -22,5 +26,6 @@ class Student extends Person
 		s.school="Tsinghua University";
 		s.getInfo();
 		s.study();
+		s.run();
 	}
 }
