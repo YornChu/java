@@ -1,0 +1,4 @@
+interface Flyer
+{
+	void fly();
+}
