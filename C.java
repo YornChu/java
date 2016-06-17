@@ -17,17 +17,19 @@ class B extends A
 	}
 	public void func3()
 	{
-		System.out.println("this is func3 from c");
+		System.out.println("this is func3 from B");
 	}
 }
-class C
+class C extends A
 {
 	public static void main(String [] args)
 	{
 		B b=new B();
 		A a=b;
-		callA(a);
-		callA(new B());
+		//callA(a);
+		callA(new A());
+		//callA(new C());
+		
 	}
 	/*public static void callA(A a)
 	{
@@ -36,10 +38,18 @@ class C
 	}*/
 	public static void callA(A a)
 	{
-		B b=(B) a;
+		if(a instanceof B)
+		{
+			B b=(B) a;
 		b.func1();
 		b.func2();
 		b.func3();
+		}
+		else
+			{
+				a.func1();
+				a.func2();
+			}
 	}
 }
 
