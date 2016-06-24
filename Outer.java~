@@ -1,17 +1,11 @@
 class Outer
 {
-	private int outer_i=100;
-	void test()
+	private int size=10;
+	public class Inner
 	{
-		Inner in=new Inner();
-		in.display();
-	}
-	class Inner
-	{
-		
-		void display()
+		public void doStuff()
 		{
-			System.out.println("display:outer_i"+outer_i);
+			System.out.println(++size);
 		}
 	}
 }
