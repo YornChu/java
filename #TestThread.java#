@@ -1,0 +1,21 @@
+package org.thread;
+/*public class TestThread extends Thread
+{
+	public void run()
+	{
+		while(true){
+		System.out.println(Thread.currentThread().getName()+"1 ");
+		}
+
+	}
+}*/
+class TestThread implements Runnable
+{
+	public void run()
+	{
+		while(true)
+			{
+				System.out.println(Thread.currentThread().getName()+"is running");
+			}
+	}
+}
