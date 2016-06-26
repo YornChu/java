@@ -9,6 +9,7 @@ package org.thread;
 
 	}
 }*/
+/*
 class TestThread implements Runnable
 {
 	public void run()
@@ -18,4 +19,27 @@ class TestThread implements Runnable
 				System.out.println(Thread.currentThread().getName()+"is running");
 			}
 	}
+}*/
+
+public class TestThread extends Thread
+{
+	private int tickets=100;
+	public void run()
+	{
+		while(true)
+			{
+				if(tickets>100)
+			}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
